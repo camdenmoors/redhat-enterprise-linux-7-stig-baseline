@@ -1,0 +1,11 @@
+on: [push]
+
+jobs:
+  xccdf-validate:
+    runs-on: ubuntu-latest
+    name: Validate xccdf
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Validate XCCDF File
+        uses: mitre/xccdf-validate-action@v1
