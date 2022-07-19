@@ -8,4 +8,4 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Validate XCCDF File
-        uses: mitre/inspec-profile-update-action@v1
+        uses: mitre/inspec-profile-update-action@main
