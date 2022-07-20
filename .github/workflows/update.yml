@@ -10,4 +10,4 @@ jobs:
       - name: Check for an update
         uses: mitre/inspec-profile-update-action@main
         env:
-          profile: '2e257e0f-10c8-4972-8873-870cfa0caf30'
+          profile: 'b0fe6bbb-8d7b-49e2-8775-057c9eb07a77'
