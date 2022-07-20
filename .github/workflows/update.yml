@@ -3,11 +3,11 @@ on: [push]
 jobs:
   xccdf-validate:
     runs-on: ubuntu-latest
-    name: Validate xccdf
+    name: Check for profile update
     steps:
       - uses: actions/checkout@master
 
       - name: Check for an update
         uses: mitre/inspec-profile-update-action@main
-        with:
+        env:
           profile: '2e257e0f-10c8-4972-8873-870cfa0caf30'
