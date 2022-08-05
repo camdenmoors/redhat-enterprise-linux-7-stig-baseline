@@ -11,3 +11,8 @@ jobs:
         uses: mitre/inspec-profile-update-action@main
         env:
           profile: 'b0fe6bbb-8d7b-49e2-8775-057c9eb07a77'
+      
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: Automattic Update
